@@ -466,8 +466,7 @@ class _DesktopChartState extends State<DesktopChart> {
                         height: 20,
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            padding: EdgeInsets.zero,
-                            primary: widget.style.hoverIndicatorBackgroundColor,
+                            padding: EdgeInsets.zero, backgroundColor: widget.style.hoverIndicatorBackgroundColor,
                           ),
                           child: Text(
                             "Auto",
