@@ -8,7 +8,7 @@ import 'package:candlesticks/src/widgets/candle_stick_widget.dart';
 import 'package:candlesticks/src/widgets/mainwindow_indicator_widget.dart';
 import 'package:candlesticks/src/widgets/price_column.dart';
 import 'package:candlesticks/src/widgets/time_row.dart';
-import 'package:candlesticks/src/widgets/top_panel.dart';
+import 'package:candlesticks/src/widgets/indicator_selector.dart';
 import 'package:candlesticks/src/widgets/volume_widget.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -444,7 +444,7 @@ class _DesktopChartState extends State<DesktopChart> {
                       Padding(
                         padding: const EdgeInsets.symmetric(
                             vertical: 4, horizontal: 12),
-                        child: TopPanel(
+                        child: IndicatorSelector(
                           style: widget.style,
                           onRemoveIndicator: widget.onRemoveIndicator,
                           currentCandle: currentCandle,
