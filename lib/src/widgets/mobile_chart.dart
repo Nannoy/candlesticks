@@ -195,14 +195,6 @@ class _MobileChartState extends State<MobileChart> {
                                 children: [
                                   Expanded(
                                     child: Container(
-                                      decoration: BoxDecoration(
-                                        border: Border(
-                                          right: BorderSide(
-                                            color: widget.style.borderColor,
-                                            width: 1,
-                                          ),
-                                        ),
-                                      ),
                                       child: AnimatedPadding(
                                         duration: Duration(milliseconds: 300),
                                         padding: EdgeInsets.symmetric(
