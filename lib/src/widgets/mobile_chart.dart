@@ -198,8 +198,7 @@ class _MobileChartState extends State<MobileChart> {
                                       child: AnimatedPadding(
                                         duration: Duration(milliseconds: 300),
                                         padding: EdgeInsets.symmetric(
-                                            vertical:
-                                                MAIN_CHART_VERTICAL_PADDING),
+                                            vertical: MAIN_CHART_VERTICAL_PADDING),
                                         child: RepaintBoundary(
                                           child: Stack(
                                             children: [
@@ -243,16 +242,9 @@ class _MobileChartState extends State<MobileChart> {
                           flex: 1,
                           child: Row(
                             children: [
+                              //volume widget
                               Expanded(
                                 child: Container(
-                                  decoration: BoxDecoration(
-                                    border: Border(
-                                      right: BorderSide(
-                                        color: widget.style.borderColor,
-                                        width: 1,
-                                      ),
-                                    ),
-                                  ),
                                   child: Padding(
                                     padding: const EdgeInsets.only(top: 10.0),
                                     child: VolumeWidget(
@@ -278,7 +270,7 @@ class _MobileChartState extends State<MobileChart> {
                                         child: Row(
                                           children: [
                                             Text(
-                                              "-${HelperFunctions.addMetricPrefix(HelperFunctions.getRoof(volumeHigh))}",
+                                              "${HelperFunctions.addMetricPrefix(HelperFunctions.getRoof(volumeHigh))}",
                                               style: TextStyle(
                                                 color:
                                                     widget.style.borderColor,
@@ -291,7 +283,6 @@ class _MobileChartState extends State<MobileChart> {
                                     ),
                                   ],
                                 ),
-                                width: PRICE_BAR_WIDTH,
                               ),
                             ],
                           ),
